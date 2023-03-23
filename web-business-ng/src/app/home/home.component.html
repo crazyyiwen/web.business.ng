@@ -6,38 +6,40 @@
       </button>
       <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item fs-5">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Product
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="btn text-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Support
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <div class="dropdown">
+                <button class="btn text-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sipport
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="false">About</a>
+          <li class="nav-item fs-6">
+            <a class="nav-link text-secondary"  routerLink="/app-about" tabindex="-1" aria-disabled="false">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="false">Contact</a>
+          <li class="nav-item fs-6">
+            <a class="nav-link" routerLink="app-contact" tabindex="-1" aria-disabled="false">Contact</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item fs-6">
             <a class="nav-link" href="#" tabindex="-1" aria-disabled="false">Blog</a>
           </li>
         </ul>
