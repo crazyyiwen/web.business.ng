@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand" style="float:left;" href="#">Navbar</a>
+      </div>
+      <div class="collapse navbar-collapse position-absolute start-50 translate-middle-x" id="navbarSupportedContent">
+        <a class="nav-link active bi-house-door-fill me-auto fs-4" routerLink="/home"></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <div mdbDropdown class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                aria-expanded="false"
+                mdbDropdownToggle
+              >
+                Product
+              </button>
+              <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <div mdbDropdown class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                aria-expanded="false"
+                mdbDropdownToggle
+              >
+                Support
+              </button>
+              <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fa-lg" routerLink="app-about" aria-current="page">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fa-lg" routerLink="app-contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fa-lg" routerLink="upload">Upload</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div mdbDropdown class="dropdown">
+        <i class="bi bi-person-fill fs-3 end-0" aria-expanded="false" type="button" mdbDropdownToggle></i>
+        <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" [routerLink]="['app-login']">Sign in</a></li>
+            <li><a class="dropdown-item" [routerLink]="['app-login']">Register</a></li>
+            <li><a class="dropdown-item" href="#">User profile</a></li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
